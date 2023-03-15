@@ -1,0 +1,626 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------
+------------------------Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------
+------------------------Header styles */
+header {
+    /* Header */
+    position: fixed;
+    display: flex;
+    flex-flow: nowrap;
+    width: 100%;
+    height: 75px;
+    z-index: 1;
+    background-color: #FFFFFF;
+    z-index: 2;
+}
+
+.Header_Content {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    width: calc(100% - 460px);
+}
+
+#Cs_lg {
+    /* Customer_Logo */
+    position: relative;
+    width: 260px;
+    height: 53px;
+    left: 4px;
+    top: 14px;
+}
+
+#Cp_lg {
+    /* Customer_Logo */
+    position: relative;
+    width: 200px;
+    height: 84px;
+    right: 20px;
+}
+
+.Header_Lb {
+    /* Header_Lable */
+    position: relative;
+    width: 90%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0d47a1;
+    mix-blend-mode: normal;
+    border: 1px solid #90caf9;
+    box-shadow: 0px 4px 12px #90caf9;
+    transform: skew(42deg);
+}
+
+.Header_Title {
+    position: absolute;
+    width: 90%;
+    height: 75px;
+    text-align: center;
+    transform: skew(-42deg);
+}
+
+.Header_Lb h3 {
+    margin-top: 15px;
+    position: relative;
+    font-family: 'Telex';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.282857px;
+    color: #FFFFFF;
+}
+
+.Header_Sel {
+    position: relative;
+    width: 110px;
+    height: 75px;
+    text-align: center;
+    font-size: 32px;
+    color: #FFFFFF;
+    background: #0d47a1;
+    mix-blend-mode: normal;
+    border: 1px solid #90caf9;
+    box-shadow: inset 0px 4px 12px #90caf9;
+    clip-path: polygon(40% 0%, 100% 100%, 0% 100%);
+    transform: rotate(180deg);
+}
+
+.Header_Sel img {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+/*------------*********************************************-----------
+-----------------------------------------------------------------------------------------------------------------------------------------------
+------------------------Navigation */
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Toggle-nav {
+    position: absolute;
+    right: -2px;
+    top: 0px;
+    background: transparent;
+    mix-blend-mode: normal;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#Toggle-nav img {
+    width: 60px;
+    height: 60px;
+}
+
+.vertical-nav {
+    position: fixed;
+    width: 78px;
+    height: 100%;
+    margin-top: 85px;
+    text-align: left;
+    color: #ffffff;
+    background: #0D47A1;
+    border: 1px solid #90CAF9;
+    box-shadow: -5px -5px 12px rgba(144, 202, 249, 0.5), 6px 6px 12px #90CAF9, inset 0px 0px 3px #90CAF9;
+    z-index: 1;
+}
+
+.vertical-nav ul {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    bottom: 95px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vertical-nav li {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: 'Telex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+.vertical-nav li a{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-nav li p{
+    opacity: 0;
+}
+
+.vertical-nav i {
+    font-style: bold;
+    font-size: 32px;
+    padding-right: 20px;
+    margin-left: 8px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+#pic {
+    width: 60px;
+    height: 60px;
+    margin-left: -5px;
+    clip-path: circle(80px at 50% 50%);
+}
+
+#avar {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: 'Telex';
+    font-style: bold;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+.show {
+    transform: translateX(-100px);
+    width: 10px;
+}
+
+/*------------*********************************************-----------
+-----------------------------------------------------------------------------------------------------------------------------------------------
+------------------------Main Container*/
+.main-content {
+    position: absolute;
+    flex-grow: 1;
+    width: calc(100% - 88px);
+    top: 0px;
+    bottom: 0px;
+    margin-left: 78px;
+    margin-top: 75px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin: 10px;
+}
+
+/*------------*********************************************-----------
+-----------------------------------------------------------------------------------------------------------------------------------------------
+------------------------Environment*/
+.Env {
+    position: absolute;
+    left: 0px;
+    right: 10px;
+    height: 155px;
+    background: #0D47A1;
+    border: 1px solid #90CAF9;
+    box-shadow: -5px -5px 12px rgba(144, 202, 249, 0.5), 6px 6px 12px #90CAF9, inset 0px 0px 3px #90CAF9;
+}
+
+.Env_Element {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    margin: 5px 10px 0px 10px;
+}
+
+.Env_Element_Container {
+    box-sizing: border-box;
+
+    display: inline-flex;
+    height: 96px;
+
+    background: #D5E6F5;
+    border: 1px solid #141C23;
+    box-shadow: -5px -5px 12px #141C23, 6px 6px 12px #141C23, inset 0px 0px 3px #141C23;
+    border-radius: 15px;
+}
+
+.Env_Element_Container .Env_Temp {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 96px;
+}
+
+.Env_Temp .Lable {
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+    font-family: 'Telex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+.Env_Temp .Value {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.Env_Element_Container img {
+    width: 80px;
+    height: 71px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/*------------*********************************************-----------
+-----------------------------------------------------------------------------------------------------------------------------------------------
+------------------------Device*/
+.Dev {
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 155px;
+    left: 0px;
+    right: 10px;
+    height: 211px;
+    margin-top: 10px;
+
+    background: #0D47A1;
+    border: 1px solid #90CAF9;
+    box-shadow: -5px -5px 12px rgba(144, 202, 249, 0.5), 6px 6px 12px #90CAF9, inset 0px 0px 3px #90CAF9;
+}
+
+.Dev_Container {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.Dev_Container_Ctr {
+    box-sizing: border-box;
+
+    position: relative;
+    text-align: center;
+    width: 165px;
+    height: 136px;
+    margin: 10px;
+
+
+    background: #D5E6F5;
+    border: 1px solid #26243F;
+    box-shadow: -5px -5px 12px #232239, 6px 6px 12px #121120, inset 0px 0px 3px #202124;
+    border-radius: 25px;
+}
+
+.Sta_ctr_Container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 12px 0px 12px 12px;
+}
+
+.Dev_Lable {
+    margin-left: 10px;
+    text-align: start;
+    font-family: 'Aclonica';
+    font-style: bold;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: 0.14px;
+
+    color: #141C23;
+}
+
+
+.Sta_Ctr {
+    font-family: 'Aclonica';
+    font-style: bold;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: 0.14px;
+
+    color: #141C23;
+}
+
+/*------------*********************************************-----------
+-----------------------------------------------------------------------------------------------------------------------------------------------
+------------------------Togle_Device*/
+.Act_Ctr {
+    position: absolute;
+    right: 17px;
+    width: 30px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: rgb(1, 22, 254);
+}
+
+.Act_Ctr :before {
+    border-radius: 20px;
+}
+
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    
+  }
+  
+  .toggle input[type="checkbox"] {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    background-color: #ff0202;
+    border: 1px solid #26243F;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    right: 14px;
+    background-color: white;
+    border: 1px solid #26243F;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input[type="checkbox"]:checked + .slider {
+    background-color: #2ff321;
+  }
+  
+  input[type="checkbox"]:checked + .slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+/*------------*********************************************-----------
+-----------------------------------------------------------------------------------------------------------------------------------------------
+------------------------PMS*/
+.Enr_Air_Container {
+    box-sizing: border-box;
+
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: 10px;
+    top: 375px;
+    margin: 10px 10px 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+
+    background: #0D47A1;
+    border: 1px solid #90CAF9;
+    box-shadow: -5px -5px 12px rgba(144, 202, 249, 0.5), 6px 6px 12px #90CAF9, inset 0px 0px 3px #90CAF9;
+}
+
+.PMS_Container{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    background: #0D47A1;
+    border: 1px solid #90CAF9;
+    box-shadow: -5px -5px 12px rgba(144, 202, 249, 0.5), 6px 6px 12px #90CAF9, inset 0px 0px 3px #90CAF9;
+}
+
+.PMS_Child{
+    position: absolute;
+    top: 45px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+/*------------*********************************************-----------
+-----------------------------------------------------------------------------------------------------------------------------------------------
+------------------------PMS Airconditioner*/
+.PMS_Air{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.PMS_Air_Sta{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #D5E6F5;
+    border: 1px solid #26243F;
+    box-shadow: -5px -5px 12px #232239, 6px 6px 12px #121120, inset 0px 0px 3px #202124;
+    border-radius: 25px;
+}
+
+.PMS_Air_Sta .Act_Ctr {
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: rgb(254, 1, 1);
+}
+.PMS_Air_Sta .Sta_ctr_Container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 12px 0px 12px 5px;
+}
+.PMS_Air_Value{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.PMS_Air_Value button{
+    position: absolute;
+    color: #121120;
+    text-align: center;
+    font-family: 'Aclonica';
+    font-style: bold;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 18px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+#Up{
+    left: 10px;
+    top: 65px;
+    cursor: pointer;
+    background: #04818a;
+    border: 1px solid #26243F;
+    box-shadow: -5px -5px 12px #232239, 6px 6px 12px #121120, inset 0px 0px 3px #202124;
+}
+
+#Down{
+    right: 15px;
+    top: 65px;
+    top: 65px;
+    cursor: pointer;
+    background: #ff0000;
+    border: 1px solid #26243F;
+    box-shadow: -5px -5px 12px #232239, 6px 6px 12px #121120, inset 0px 0px 3px #202124;
+}
+
+.PMS_Air_Value img{
+    width: 160px;
+    height: 160px;
+}
+
+.PMS_Air_Sta .Dev_Lable {
+    position: absolute;
+    bottom: 0px;
+    left: -10px;
+    text-align: start;
+    font-family: 'Aclonica';
+    font-style: bold;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 18px;
+    letter-spacing: 0.14px;
+    color: #141C23;
+}
+/*------------*********************************************-----------
+-----------------------------------------------------------------------------------------------------------------------------------------------
+------------------------PMS Grid*/
+.Enr_Button button{
+    margin-left: 10px;
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Aclonica';
+    font-style: bold;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 18px;
+    letter-spacing: 0.14px;
+    color: #141C23;
+
+}
+.chart{
+    position: absolute;
+    top: 75px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+#myChart {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    bottom: 0px;
+    background: #D5E6F5;
+    border: 1px solid #26243F;
+    box-shadow: -5px -5px 12px #232239, 6px 6px 12px #121120, inset 0px 0px 3px #202124;
+  }

@@ -1,0 +1,15 @@
+.vertical-nav.open{
+    width: 200px;
+    transform:  all 1.5s ease;
+}
+
+.vertical-nav.open li p{
+    opacity: 1;
+    transform:  all 0.5s ease;;
+}
+
+.vertical-nav.open~.main-content{
+    width: calc(100% - 210px);
+    margin-left: 200px;
+    transform:  all 1.5s ease;
+}
