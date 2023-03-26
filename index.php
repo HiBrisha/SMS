@@ -176,7 +176,7 @@
                 </div>
                 <!----------------------------------------------------------------------------------------------------------------------->
                 <!--End Part-->
-                <div class="Enr_Air_Container">
+ <div class="Enr_Air_Container">
                     <div class="PMS_Container">
                         <img src="./pictures/logo_Icon/Tab_Lable3.png" alt="">
                         <div class="PMS_Child">
@@ -192,7 +192,10 @@
                                         </div>
                                         <div class="PMS_Air_Value">
                                             <button id="Up">+</button>
-                                            <img src="./pictures/logo_Icon/Air_Bkg.png" alt="">
+                                            <div>
+                                                <img src="./pictures/logo_Icon/Air_Bkg.png" alt="">
+                                                <div class="value">25 ℃</div>
+                                            </div>
                                             <button id="Down">-</button>
                                         </div>
                                         <div class="Dev_Lable">Điều hòa 1</div>
@@ -211,7 +214,10 @@
                                         </div>
                                         <div class="PMS_Air_Value">
                                             <button id="Up">+</button>
-                                            <img src="./pictures/logo_Icon/Air_Bkg.png" alt="">
+                                            <div>
+                                                <img src="./pictures/logo_Icon/Air_Bkg.png" alt="">
+                                                <div class="value">25 ℃</div>
+                                            </div>
                                             <button id="Down">-</button>
                                         </div>
                                         <div class="Dev_Lable">Điều hòa 2</div>
